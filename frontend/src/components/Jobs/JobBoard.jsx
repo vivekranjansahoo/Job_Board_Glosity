@@ -2,12 +2,16 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { job } from "../../Routes/Allroutes";
 import RecruiterDetailsModal from "./RecruiterDetailsModal";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const JobBoard = () => {
   const [jobs, setJobs] = useState([]);
   const [selectedRecruiter, setSelectedRecruiter] = useState(null);
-
+  const navigate = useNavigate();
   useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (!token) {
+      navigate("/");
+    }
     const fetchJobs = async () => {
       try {
         const { data } = await axios.get(job);
