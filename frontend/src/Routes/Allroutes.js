@@ -1,5 +1,6 @@
-export const host =
-  "http://localhost:5000" || "https://job-board-glosity.onrender.com";
+// export const host =
+//   "http://localhost:5000"
+export const host = "https://job-board-glosity.onrender.com";
 
 //login
 export const login = `${host}/auth/login`;
