@@ -5,6 +5,18 @@
 
 https://github.com/vivekranjansahoo/Job_Board_Glosity/assets/97107034/d7fcedff-4e1e-4632-bd8b-44033556163b
 
+Demo user
+ ```bash
+Email-testuser@gmail.com
+Password - 123456
+```
+
+Demo recruiter
+```bash
+Email - vk@gmail.com
+Password - 123456
+```
+
 # Job Portal Website
 
 A job portal website built using the MERN stack, allowing recruiters to post job listings and applicants to apply for jobs. The platform features separate login/signup for recruiters and applicants, CRUD functionality for job postings, and application tracking for recruiters.
